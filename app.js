@@ -12,6 +12,8 @@ app.route("/").get((req, res) => {
   res.send("<h1>Server is Up and Running</h1>");
 });
 
+
+
 const start = async () => {
   try {
     connectDb(process.env.MONGO_URL);
